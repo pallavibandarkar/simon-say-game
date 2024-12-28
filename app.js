@@ -20,10 +20,10 @@ document.addEventListener("keypress",()=>{
 })
 
 let sounds = {
-    red: new Audio('sounds/red.wav'),        
-    yellow: new Audio('sounds/yellow.wav'),  
-    green: new Audio('sounds/green.wav'),    
-    purple: new Audio('sounds/purple.wav')   
+    red: new Audio('sounds/red.mp3'),        
+    yellow: new Audio('sounds/yellow.mp3'),  
+    green: new Audio('sounds/green.mp3'),    
+    purple: new Audio('sounds/purple.mp3')   
 };
 
 function playSound(color) {
