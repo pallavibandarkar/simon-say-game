@@ -9,15 +9,27 @@ let btns = ["red","yellow","green","purple"]
 
 let h2 = document.querySelector("h2")
 let p = document.querySelector("p")
+let startBtn = document.getElementById("startBtn");
 
-document.addEventListener("keypress",()=>{
-    if(started == false){
-        console.log("Game is started")
+
+// document.addEventListener("keypress",()=>{
+//     if(started == false){
+//         console.log("Game is started")
+//         p.innerHTML = ``;
+//         started = true;
+//         levelUp()
+//     }
+// })
+
+startBtn.addEventListener("click", () => {
+    if (!started) {
+        console.log("Game started");
         p.innerHTML = ``;
+        startBtn.style.display="none"
         started = true;
-        levelUp()
+        levelUp();
     }
-})
+});
 
 let sounds = {
     red: new Audio('https://raw.githubusercontent.com/pallavibandarkar/simon-say-game/main/Sounds/red.mp3'),        
@@ -75,7 +87,7 @@ function checkAns(idx){
         highScore.push(level)
         let maxNum = Math.max(...highScore)
         console.log(maxNum)
-        h2.innerHTML = `Game Over! Your Score was <b>${level}</b><br/> Press Any key to start`
+        h2.innerHTML = `Game Over! Your Score was <b>${level}</b><br/> Press Button to start the game`
         p.innerHTML = `<h2>Your highest score was ${maxNum} 🏆</h2>`;
         document.querySelector("body").style.backgroundColor="red"
         setTimeout(()=>{
@@ -104,5 +116,5 @@ function reset(){
     level = 0
     gameSeq = []
     userSeq = []
-    
+    startBtn.style.display = "block"
 }

@@ -54,6 +54,22 @@ h1, h2, p {
     background-color: green;
 }
 
+#startBtn {
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 20px auto;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#startBtn:hover {
+    background-color: #45a049;
+}
+
 @media (max-width: 768px) {
     .btn {
         height: 120px;
