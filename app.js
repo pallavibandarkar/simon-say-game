@@ -20,10 +20,10 @@ document.addEventListener("keypress",()=>{
 })
 
 let sounds = {
-    red: new Audio('sounds/red.mp3'),        
-    yellow: new Audio('sounds/yellow.mp3'),  
-    green: new Audio('sounds/green.mp3'),    
-    purple: new Audio('sounds/purple.mp3')   
+    red: new Audio('https://raw.githubusercontent.com/pallavibandarkar/simon-say-game/main/Sounds/red.mp3'),        
+    yellow: new Audio('https://raw.githubusercontent.com/pallavibandarkar/simon-say-game/main/Sounds/yellow.mp3'),  
+    green: new Audio('https://raw.githubusercontent.com/pallavibandarkar/simon-say-game/main/Sounds/green.mp3'),    
+    purple: new Audio('https://raw.githubusercontent.com/pallavibandarkar/simon-say-game/main/Sounds/purple.mp3')   
 };
 
 function playSound(color) {
