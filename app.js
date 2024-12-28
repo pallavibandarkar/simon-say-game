@@ -10,7 +10,7 @@ let btns = ["red","yellow","green","purple"]
 let h2 = document.querySelector("h2")
 let p = document.querySelector("p")
 
-document.addEventListener("keypress",()=>{
+document.addEventListener("click",()=>{
     if(started == false){
         console.log("Game is started")
         p.innerHTML = ``;
