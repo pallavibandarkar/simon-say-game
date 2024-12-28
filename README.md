@@ -24,7 +24,7 @@ A fun and interactive Simon Says memory game developed using HTML, CSS, and Java
 ## How to Run Locally
 1. Clone this repository to your local machine:
     ```bash
-    git clone https://github.com/<username>/<repo>.git
+    git clone https://github.com/pallavibandarkar/simon-say-game.git
     ```
 2. Open the `index.html` file in your browser to play the game.
 
