@@ -1,33 +1,81 @@
-body{
+body {
     text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-.box-container{
+
+h1, h2, p {
+    margin: 20px;
+}
+
+.box-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
 }
-.btn{
-    height: 200px;
-    width: 200px;
+
+.btn {
+    height: 150px;
+    width: 150px;
     border-radius: 20%;
     border: 8px solid black;
-    margin: 1.5rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
 }
-.red{
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.red {
     background-color: #d95980;
 }
-.yellow{
-    background-color: #f99b45;
 
+.yellow {
+    background-color: #f99b45;
 }
-.green{
-    background-color:#63aac0;
+
+.green {
+    background-color: #63aac0;
 }
-.purple{
+
+.purple {
     background-color: #819ff9;
 }
-.flash{
+
+.flash {
     background-color: white;
 }
-.userFlash{
+
+.userflash {
     background-color: green;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        height: 120px;
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        height: 100px;
+        width: 100px;
+    }
+}
+@media (max-width: 380px) {
+    .btn {
+        height: 90px;
+        width: 90px;
+    }
+}
+@media (max-width: 340px) {
+    .btn {
+        height: 80px;
+        width: 80px;
+    }
 }
