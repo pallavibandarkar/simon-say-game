@@ -76,7 +76,7 @@ function checkAns(idx){
         let maxNum = Math.max(...highScore)
         console.log(maxNum)
         h2.innerHTML = `Game Over! Your Score was <b>${level}</b><br/> Press Any key to start`
-        p.innerHTML = `<h2>Your highest score was ${highScore} 🏆</h2>`;
+        p.innerHTML = `<h2>Your highest score was ${maxNum} 🏆</h2>`;
         document.querySelector("body").style.backgroundColor="red"
         setTimeout(()=>{
             document.querySelector("body").style.backgroundColor="white"
